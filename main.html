@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess The Word</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="start-menu">
+        <h1>Guess The Word</h1>
+        <button id="start-btn">Start</button>
+        <button id="continue-btn">Continue</button>
+        <button id="settings-btn">Settings</button>
+    </div>
+
+    <div id="game-container" class="hidden">
+        <div id="animated-bg"></div>
+        <h2 id="hint"></h2>
+        <div id="word-display"></div>
+        <p>Chances Left: <span id="chances">5</span></p>
+        <p>Score: <span id="score">0</span></p>
+        <div id="keyboard"></div>
+    </div>
+
+    <audio id="bg-music" loop></audio>
+    <audio id="correct-sound" src="assets/correct.mp3"></audio>
+    <audio id="wrong-sound" src="assets/wrong.mp3"></audio>
+    <audio id="game-over-sound" src="assets/game-over.mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
